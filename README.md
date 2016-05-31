@@ -1,19 +1,22 @@
 # Git Workflow
 
-A set of guidelines and principles to help define your Git workflow
-
+A set of guidelines and principles to help define your workflow with Git
 
 ## The quick example
 
+Make a local copy of the code
 ```
 $ git clone git@github.com:UKHomeOffice/<repo_name>.git
-
 $ cd <repo_name>
+```
 
+Create a branch [using these detailed naming guidelines](./docs/branches.md#naming-conventions)
+```
 $ git checkout -b <branch_type>/<branch_name> (E.g. feature/add-feature1 or feature/ABC-1)
 ```
 
-#### ...Develop the feature/fix the bug...
+**This is the part where you make the changes relevant to the ticket and new branch name you are working in**
+
 
 Add your changes to be committed. The `-p` (`--patch`) gives you the opportunity to accept (`y`) or decline (`n`).
 ```
